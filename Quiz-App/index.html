@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+.restart-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: deeppink;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.restart-btn:hover {
+    background-color: blueviolet;
+    border-color: white;
+    color: yellow;
+}
+</style>
+
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <div id="question-container">
+            <p id="question"><Loading....</p>
+           
+            <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <button id="next-btn">Next</button>
+        <button id="restart-btn" class="restart-btn" onclick="restartQuiz()">Restart Quiz</button>
+
+
+    
+        <p id="score">Score: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
